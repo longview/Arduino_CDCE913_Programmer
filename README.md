@@ -1,5 +1,7 @@
-# Arduino_CDCE913_Programmer
-A programmer for the CDCE913 PLL chip running on an Arduino
+# Arduino CDCE913 Programmer
+A very basic programmer for the CDCE913 PLL chip running on an Arduino
+
+It supports writing a config for a CDCE913 chip based on the output from TI Clock Pro.
 
 To use:
 

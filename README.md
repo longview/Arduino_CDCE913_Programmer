@@ -8,7 +8,7 @@ Generate a configuration using TI Clock Pro
 Export an Intel Hex file, I called it cdce.HEX
 
 Convert it to a binary file:
-`objcopy -I ihex -O binary cdce.HEX`
+`objcopy -I ihex -O binary cdce.HEX cdce.bin`
 
 Generate a .h file:
 `xxd -i -a cdce.bin > cdce.h`

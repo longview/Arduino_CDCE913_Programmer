@@ -2,13 +2,17 @@
 A programmer for the CDCE913 PLL chip running on an Arduino
 
 To use:
+
 Generate a configuration using TI Clock Pro
 
 Export an Intel Hex file, I called it cdce.HEX
+
 Convert it to a binary file:
-> objcopy -I ihex -O binary cdce.HEX
+`objcopy -I ihex -O binary cdce.HEX`
+
 Generate a .h file:
-> xxd -i -a cdce.bin > cdce.h
+`xxd -i -a cdce.bin > cdce.h`
+
 Either include it in the program or just cut and paste it into the top of the .ino file
 
 Warning: If you set the address offset ("SlaveAddress" in Clock Pro) field to something other than 1, or are programming a non-blank device with this field set to something other than 1, the program will fail.
